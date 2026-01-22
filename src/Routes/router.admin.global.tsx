@@ -6,7 +6,6 @@ export default function RouterAdminGlobal() {
   return (
     <>
       <Routes>
-        
         <Route element={<ProtectedRouteAdminGlobal />}>
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/users" element={<div>Manage Users</div>} />

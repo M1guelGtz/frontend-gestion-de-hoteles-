@@ -1,6 +1,7 @@
-import { createContext } from "react"
+import { createContext } from "react";
+import { ProviderDTO } from "../../features/users/Data/models/ProviderDTO";
 
-import { User } from "../../features/users/domain/user";
-const UserContext = createContext< User | null>(null)
+
+const UserContext = createContext<ProviderDTO | null>(null);
 
 export default UserContext

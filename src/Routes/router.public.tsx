@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import LoginPage from '../pages/LoginPage'
+import LoginPage from '../features/users/Presentation/pages/LoginPage'
 
 export default function RouterPublic() {
   return (

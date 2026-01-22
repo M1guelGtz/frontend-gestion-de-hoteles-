@@ -18,10 +18,12 @@ export function ProtectedRoute({
 }: ProtectedRouteProps) {
     
     // Si no está autenticado, redirigir al login
+    
     if (!isAuthenticated) {
         return <Navigate to={redirectTo} replace />;
     }
 
+    
     // Si se requiere un rol específico y no coincide, redirigir al home o login
     if (requiredRole && userRole !== requiredRole) {
         return <Navigate to="/" replace />;

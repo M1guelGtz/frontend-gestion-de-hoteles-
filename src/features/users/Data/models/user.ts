@@ -5,7 +5,7 @@ export interface User {
     email: string;
     password: string;
     username: string;
-    userRol: 'admin_global' | 'admin_hotel' | 'recepcionista' | 'recamarista';
+    rol: 'admin_global' | 'admin_hotel' | 'recepcionista' | 'recamarista';
     activo: boolean;
     fechaRegistro: Date;
 }

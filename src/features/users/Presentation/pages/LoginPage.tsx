@@ -1,4 +1,5 @@
-    import Input from '../../../../Components/Input';
+    import { Link } from 'react-router-dom';
+import Input from '../../../../Components/Input';
 import { useAuth } from '../viewModels/useAuth';
     export default function LoginPage() {
         const { 
@@ -17,12 +18,12 @@ import { useAuth } from '../viewModels/useAuth';
         
         return (
             <div className='min-h-screen flex justify-center border flex-col items-center'>
-                <button className='absolute top-5 left-5 text-blue-600 hover:text-blue-800 flex items-center gap-2'>
+                <Link to={"/"} className='absolute top-5 left-5 text-blue-600 hover:text-blue-800 flex items-center gap-2'>
                   <svg className='w-5 h-5' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
                     <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M15 19l-7-7 7-7' />
                   </svg>
                   Regresar
-                </button>
+                </Link>
                 <h2 className="font-medium text-3xl mb-6">Iniciar Sesión en SGH</h2>
                 <form 
                 onSubmit={handleSubmit}

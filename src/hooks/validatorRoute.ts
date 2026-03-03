@@ -1,5 +1,4 @@
-import { useLocation } from "react-router-dom";
-
+/*
 export function useValidatorRoute() {
     const location = useLocation();
 
@@ -32,4 +31,4 @@ export function useValidatorRoute() {
 
 
     return { isPublicRoute, isAdminRoute, isHotelAdminRoute, isReceptionistRoute, isRecamaristaRoute };
-}
+}*/

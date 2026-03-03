@@ -9,7 +9,7 @@ export function useAuth() {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
     const value = useContext(UserContext);
-    const navigate = useNavigate();
+    const navigate = useNavigate();     
     useEffect(() => {
         // Verificar si hay un token en localStorage
         const token = localStorage.getItem('token');
@@ -40,7 +40,7 @@ export function useAuth() {
     e.preventDefault();
     setError('');
     setLoading(true);
-
+    
     try {
         const response = await fetch(`${import.meta.env.VITE_API_URL}users/auth/login`, {
             method: 'POST',
